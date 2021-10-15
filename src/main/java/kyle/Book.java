@@ -18,7 +18,6 @@ public class Book extends LibraryContents implements Literature {
         return Author;
     }
     public static void setAuthor(String Author) {
-        Author = Author;
     }
     public void setLength(int Length){
         this.BookLength = Length;
