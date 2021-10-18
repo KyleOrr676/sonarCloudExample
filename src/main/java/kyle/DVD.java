@@ -3,27 +3,26 @@ package kyle;
 public class DVD extends LibraryContents implements Media {
 
     private static String Director;
-    private static int DVDLength;
+    private static int dvdLength;
 
 
     public DVD(String title, String genre, String Director, int DVDLength) {
         super(title, genre);
         DVD.Director = Director;
-        DVD.DVDLength = DVDLength;
+        DVD.dvdLength = DVDLength;
     }
 
-
-    public void setDirector(String director) {
-        Director = director;
-    }
     public static String getDirector() {
         return Director;
     }
+    public void setDirector(String director) {
+        Director = director;
+    }
     public void setLength(int Length) {
-        DVDLength = Length;
+        dvdLength = Length;
     }
     public static int getDVDLength() {
-        return DVDLength;
+        return dvdLength;
     }
 
     @Override

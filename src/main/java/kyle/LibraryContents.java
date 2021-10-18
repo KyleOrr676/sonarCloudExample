@@ -3,26 +3,26 @@ package kyle;
 public abstract class LibraryContents {
 
 
-    private static String Title;
-    private static String Genre;
+    private static String title;
+    private static String genre;
 
 
     public LibraryContents(String title, String genre) {
-        Title = title;
-        Genre = genre;
+        LibraryContents.title = title;
+        LibraryContents.genre = genre;
     }
 
 
     public static String getTitle() {
-        return Title;
+        return title;
     }
     public void setTitle(String Title) {
-        this.Title = Title;
+        title = Title;
     }
-    public static String getGenre(){
-        return Genre;
+    public static String getGenre() {
+        return genre;
     }
     public void setGenre(String Genre){
-        this.Genre = Genre;
+        genre = Genre;
     }
 }

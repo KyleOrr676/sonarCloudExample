@@ -2,28 +2,28 @@ package kyle;
 
 public class Comic extends Book implements Literature{
 
-    public static int ComicLength;
+    public static int comicLength;
 
 
     public Comic(String Title, String Genre, String Author, int Length) {
         super(Title, Genre, Author, Length);
-        ComicLength = Length;
+        comicLength = Length;
     }
 
-
+    @Override
     public void setLength(int Length){
-        ComicLength = Length;
+        Comic.comicLength = Length;
     }
     public static int getComicLength(){
-        return ComicLength;
+        return comicLength;
     }
     @Override
-    public void written() {
+    public void written() {  ///// Interface
     }
     @Override
-    public void published() {
+    public void published() {  ///// Interface
     }
     @Override
-    public void read() {
+    public void read() {  ///// Interface
     }
 }

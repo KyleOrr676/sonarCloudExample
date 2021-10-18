@@ -4,13 +4,13 @@ public class Book extends LibraryContents implements Literature {
 
 
     private static String Author;
-    private static int BookLength;
+    private static int bookLength;
 
 
-    public Book(String Title, String Genre, String Author, int BookLength) {
+    public Book(String Title, String Genre, String Author, int bookLength) {
         super(Title, Genre);
         Book.Author = Author;
-
+        Book.bookLength = bookLength;
     }
 
 
@@ -18,21 +18,21 @@ public class Book extends LibraryContents implements Literature {
         return Author;
     }
     public static void setAuthor(String Author) {
-        Author = Author;
-    }
-    public void setLength(int Length){
-        BookLength = Length;
+        Book.Author = Author;
     }
     public static int getBookLength(){
-        return BookLength;
+        return bookLength;
+    }
+    public void setLength(int Length){
+        Book.bookLength = Length;
     }
     @Override
-    public void written() {
+    public void written() {  ////// Interface
     }
     @Override
-    public void published() {
+    public void published() {  ////// Interface
     }
     @Override
-    public void read() {
+    public void read() {  ////// Interface
     }
 }
