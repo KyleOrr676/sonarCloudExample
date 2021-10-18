@@ -8,12 +8,12 @@ public class Novel extends Book implements Literature{
 
     public Novel(String title, String genre, String Author, int Length) {
         super(title, genre, Author, Length);
-        this.NovelLength = Length;
+        NovelLength = Length;
     }
 
 
     public void setLength(int Length){
-        this.NovelLength = Length;
+        NovelLength = Length;
     }
     public static int getNovelLength(){
         return NovelLength;

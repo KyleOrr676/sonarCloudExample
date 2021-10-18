@@ -8,19 +8,19 @@ public class DVD extends LibraryContents implements Media {
 
     public DVD(String title, String genre, String Director, int DVDLength) {
         super(title, genre);
-        this.Director = Director;
-        this.DVDLength = DVDLength;
+        DVD.Director = Director;
+        DVD.DVDLength = DVDLength;
     }
 
 
     public void setDirector(String director) {
-        this.Director = director;
+        Director = director;
     }
     public static String getDirector() {
         return Director;
     }
     public void setLength(int Length) {
-        this.DVDLength = Length;
+        DVDLength = Length;
     }
     public static int getDVDLength() {
         return DVDLength;
