@@ -8,7 +8,7 @@ public class audiobookTest {
     @Test
     public void testGetAudiobookMethod(){
         Audiobook testAudiobook = new Audiobook ("LOTR", "Fantasy", 1500);
-        assertEquals("The Film is not LOTR", "LOTR", LibraryContents.getTitle());
+        assertEquals("The Film is not LOTR", "LOTR", testAudiobook.getTitle());
     }
     @Test
     public void testSetAudiobookTitleMethod(){
@@ -20,7 +20,7 @@ public class audiobookTest {
     @Test
     public void testGetAudiobookGenreMethod(){
         Audiobook testAudiobook = new Audiobook ("LOTR", "Fantasy", 1500);
-        assertEquals("The Film is not Fantasy", "Fantasy", LibraryContents.getGenre());
+        assertEquals("The Film is not Fantasy", "Fantasy", testAudiobook.getGenre());
     }
     @Test
     public void testSetAudiobookGenreMethod(){
@@ -32,13 +32,13 @@ public class audiobookTest {
     @Test
     public void testGetAudiobookLengthMethod(){
         Audiobook testAudiobook = new Audiobook ("LOTR", "Fantasy", 1500);
-        assertEquals("The Film is not 1500 mins long", 1500, Audiobook.getABLength());
+        assertEquals("The Film is not 1500 mins long", 1500, testAudiobook.getABLength());
     }
     @Test
     public void testSetAudiobookLengthMethod(){
         int Length = 1500;
         Audiobook testAudiobook = new Audiobook ("LOTR", "Fantasy", 1500);
         Audiobook.setLength(1500);
-        assertEquals("this isn't the right length", Audiobook.getABLength(), Length);
+        assertEquals("this isn't the right length", testAudiobook.getABLength(), Length);
     }
 }
