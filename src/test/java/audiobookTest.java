@@ -15,7 +15,7 @@ public class audiobookTest {
         String Title = "LOTR";
         Audiobook testAudiobook = new Audiobook ("LOTR", "Fantasy", 1500);
         testAudiobook.setTitle("LOTR");
-        assertEquals("this isn't the right title", LibraryContents.getTitle(), Title);
+        assertEquals("this isn't the right title", testAudiobook.getTitle(), Title);
     }
     @Test
     public void testGetAudiobookGenreMethod(){
@@ -27,7 +27,7 @@ public class audiobookTest {
         String Genre = "Fantasy";
         Audiobook testAudiobook = new Audiobook ("LOTR", "Fantasy", 1500);
         testAudiobook.setGenre("Fantasy");
-        assertEquals("this isn't the right genre", LibraryContents.getGenre(), Genre);
+        assertEquals(testAudiobook.getGenre(), Genre);
     }
     @Test
     public void testGetAudiobookLengthMethod(){
