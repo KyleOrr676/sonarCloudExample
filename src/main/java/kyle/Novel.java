@@ -2,29 +2,18 @@ package kyle;
 
 public class Novel extends Book implements Literature{
 
-    private static String NovelAuthor;
-    private static int NovelLength;
 
-
-    public Novel(String title, String genre, String Author, int Length) {
-        super(title, genre, Author, Length);
-        Novel.NovelLength = Length;
-        Novel.NovelAuthor = Author;
+    public Novel(String Title, String Genre, String Author, int bookLength) {
+        super(Title, Genre, Author, bookLength);
     }
 
-    public static int getNovelLength(){
-        return NovelLength;
-    }
-    public void setLength(int Length){
-        NovelLength = Length;
+    @Override
+    public void written() {  ////// Interface
     }
     @Override
-    public void written() {
+    public void published() {  ///// Interface
     }
     @Override
-    public void published() {
-    }
-    @Override
-    public void read() {
+    public void read() {  ////// Interface
     }
 }

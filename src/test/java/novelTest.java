@@ -29,7 +29,7 @@ public class novelTest {
         assertEquals(testNovel.getGenre(), Genre);
     }
     @Test
-    public void testNovelAuthorMethod(){
+    public void testGetNovelAuthorMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
         assertEquals("The Author is not John Steinbeck", "John Steinbeck", testNovel.getAuthor());
     }
@@ -41,15 +41,15 @@ public class novelTest {
         assertEquals(testNovel.getAuthor(), Author);
     }
     @Test
-    public void testNovelLengthMethod(){
+    public void testGetNovelLengthMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
-        assertEquals("The Length is not 200", 200, testNovel.getNovelLength());
+        assertEquals("The Length is not 200", 200, testNovel.getBookLength());
     }
     @Test
     public void testSetNovelLengthMethod(){
         int Length = 200;
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
-        testNovel.setLength(200);
-        assertEquals(testNovel.getNovelLength(), Length);
+        testNovel.setBookLength(200);
+        assertEquals(testNovel.getBookLength(), Length);
     }
 }

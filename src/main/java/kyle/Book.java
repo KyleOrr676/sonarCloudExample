@@ -10,7 +10,6 @@ public class Book extends LibraryContents implements Literature {
     public Book(String Title, String Genre, String Author, int bookLength) {
         super(Title, Genre);
         Book.Author = Author;
-        Book.bookLength = bookLength;
     }
 
 
@@ -23,7 +22,7 @@ public class Book extends LibraryContents implements Literature {
     public static int getBookLength(){
         return bookLength;
     }
-    public void setLength(int Length){
+    public static void setBookLength(int Length){
         Book.bookLength = Length;
     }
     @Override

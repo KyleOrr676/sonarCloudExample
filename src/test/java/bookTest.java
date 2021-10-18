@@ -49,7 +49,7 @@ public class bookTest {
     public void testSetBookLengthMethod(){
         int Length = 234;
         Book testBook = new Book ("Harry Potter", "Fantasy", "JK Rowling", 234);
-        testBook.setLength(234);
+        testBook.setBookLength(234);
         assertEquals(Book.getBookLength(), Length);
     }
 }

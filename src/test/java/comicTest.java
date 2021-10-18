@@ -44,13 +44,13 @@ public class comicTest {
     @Test
     public void testComicLengthMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
-        assertEquals("The Length is not 96", 50, testComic.getComicLength());
+        assertEquals("The Length is not 50", 50, testComic.getBookLength());
     }
     @Test
     public void testSetComicLengthMethod(){
         int Length = 50;
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
-        testComic.setLength(50);
-        assertEquals(testComic.getComicLength(), Length);
+        testComic.setBookLength(50);
+        assertEquals(testComic.getBookLength(), Length);
     }
 }
