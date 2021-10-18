@@ -25,6 +25,7 @@ public class DVD extends LibraryContents implements Media {
     public static int getDVDLength() {
         return DVDLength;
     }
+
     @Override
     public void watched() {
     }
