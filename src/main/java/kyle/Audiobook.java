@@ -15,6 +15,7 @@ public class Audiobook extends LibraryContents implements Literature{
         return ABLength;
     }
     public void setLength(int Length){
+        ABLength = Length;
     }
     @Override
     public void written() {
