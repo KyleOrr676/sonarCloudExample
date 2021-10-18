@@ -144,31 +144,80 @@ public class LibraryTests {
         assertEquals(testAudiobook.getABLength(), Length);
     }
 
+
     @Test
-    public void testComicTitleMethod(){
+    public void testGetComicTitleMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
         assertEquals("The Comic is not Batman", "Batman", testComic.getTitle());
     }
     @Test
-    public void testComicGenreMethod(){
+    public void testSetComicTitleMethod(){
+        String Title = "Batman";
+        Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
+        testComic.setTitle("Batman");
+        assertEquals(testComic.getTitle(), Title);
+    }
+    @Test
+    public void testGetComicGenreMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
         assertEquals("The Genre is not Superhero", "Superhero", testComic.getGenre());
+    }
+    @Test
+    public void testSetComicGenreMethod(){
+        String Genre = "Superhero";
+        Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
+        testComic.setGenre("Superhero");
+        assertEquals(testComic.getGenre(), Genre);
+    }
+    @Test
+    public void testGetComicAuthorMethod(){
+        Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
+        assertEquals("The Author is not DC Comics", "DC Comics", testComic.getAuthor());
+    }
+    @Test
+    public void testSetComicAuthorMethod(){
+        String Author = "DC Comics";
+        Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
+        testComic.setAuthor("DC Comics");
+        assertEquals(testComic.getAuthor(), Author);
     }
     @Test
     public void testComicLengthMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
         assertEquals("The Length is not 96", 50, testComic.getComicLength());
     }
+    @Test
+    public void testSetComicLengthMethod(){
+        int Length = 50;
+        Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
+        testComic.setLength(50);
+        assertEquals(testComic.getComicLength(), Length);
+    }
+
 
     @Test
-    public void testNovelTitleMethod(){
+    public void testGetNovelTitleMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
         assertEquals("The Title is not Of mice and men", "Of mice and Men", testNovel.getTitle());
     }
     @Test
-    public void testNovelGenreMethod(){
+    public void testSetNovelTitleMethod(){
+        String Title = "Of mice and Men";
+        Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
+        testNovel.setTitle("Of mice and Men");
+        assertEquals(testNovel.getTitle(), Title);
+    }
+    @Test
+    public void testGetNovelGenreMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
         assertEquals("The genre is not Adventure", "Adventure", testNovel.getGenre());
+    }
+    @Test
+    public void testSetNovelGenreMethod(){
+        String Genre = "Adventure";
+        Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
+        testNovel.setGenre("Adventure");
+        assertEquals(testNovel.getGenre(), Genre);
     }
     @Test
     public void testNovelAuthorMethod(){
@@ -176,8 +225,22 @@ public class LibraryTests {
         assertEquals("The Author is not John Steinbeck", "John Steinbeck", testNovel.getAuthor());
     }
     @Test
+    public void testSetNovelAuthorMethod(){
+        String Author = "John Steinbeck";
+        Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
+        testNovel.setTitle("OJohn Steinbeck");
+        assertEquals(testNovel.getAuthor(), Author);
+    }
+    @Test
     public void testNovelLengthMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
         assertEquals("The Length is not 200", 200, testNovel.getNovelLength());
+    }
+    @Test
+    public void testSetNovelLengthMethod(){
+        int Length = 200;
+        Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
+        testNovel.setLength(200);
+        assertEquals(testNovel.getNovelLength(), Length);
     }
 }
