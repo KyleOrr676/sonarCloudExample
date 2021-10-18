@@ -7,7 +7,9 @@ public abstract class LibraryContents {
     private static String Genre;
 
 
-    protected LibraryContents(String title, String genre) {
+    public LibraryContents(String title, String genre) {
+        Title = title;
+        Genre = genre;
     }
 
 
@@ -15,29 +17,12 @@ public abstract class LibraryContents {
         return Title;
     }
     public void setTitle(String Title) {
-        LibraryContents.Title = Title;
+        this.Title = Title;
     }
     public static String getGenre(){
         return Genre;
     }
     public void setGenre(String Genre){
-        LibraryContents.Genre = Genre;
+        this.Genre = Genre;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

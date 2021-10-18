@@ -7,6 +7,7 @@ public class Audiobook extends LibraryContents implements Literature{
 
     public Audiobook(String title, String genre, int length) {
         super(title, genre);
+        ABLength = length;
     }
 
 
@@ -14,14 +15,15 @@ public class Audiobook extends LibraryContents implements Literature{
         return ABLength;
     }
     public void setLength(int Length){
+        this.ABLength=ABLength;
     }
     @Override
-    public void written() { /////////////interface
+    public void written() {
     }
     @Override
-    public void published() {  /////////////interface
+    public void published() {
     }
     @Override
-    public void read() {  /////////////interface
+    public void read() {
     }
 }

@@ -7,22 +7,23 @@ public class Comic extends Book implements Literature{
 
     public Comic(String Title, String Genre, String Author, int Length) {
         super(Title, Genre, Author, Length);
+        this.ComicLength = Length;
     }
 
 
     public void setLength(int Length){
-        ComicLength = Length;
+        this.ComicLength = Length;
     }
     public static int getComicLength(){
         return ComicLength;
     }
     @Override
-    public void written() { ////////interface
+    public void written() {
     }
     @Override
-    public void published() { ////////interface
+    public void published() {
     }
     @Override
-    public void read() { ////////interface
+    public void read() {
     }
 }
