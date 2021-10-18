@@ -9,8 +9,6 @@ public class Book extends LibraryContents implements Literature {
 
     public Book(String Title, String Genre, String Author, int BookLength) {
         super(Title, Genre);
-        Book.Author = Author;
-        this.BookLength = BookLength;
     }
 
 
@@ -26,12 +24,12 @@ public class Book extends LibraryContents implements Literature {
         return BookLength;
     }
     @Override
-    public void written() {
+    public void written() {  ////////interface
     }
     @Override
-    public void published() {
+    public void published() {  ////////interface
     }
     @Override
-    public void read() {
+    public void read() {  ////////interface
     }
 }
