@@ -1,3 +1,5 @@
+import kyle.Book;
+import kyle.LibraryContents;
 import kyle.Novel;
 import org.junit.Test;
 
@@ -7,49 +9,49 @@ public class novelTest {
     @Test
     public void testGetNovelTitleMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
-        assertEquals("The Title is not Of mice and men", "Of mice and Men", testNovel.getTitle());
+        assertEquals("The Title is not Of mice and men", "Of mice and Men", LibraryContents.getTitle());
     }
     @Test
     public void testSetNovelTitleMethod(){
         String Title = "Of mice and Men";
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
         testNovel.setTitle("Of mice and Men");
-        assertEquals(testNovel.getTitle(), Title);
+        assertEquals("this isn't the right title", LibraryContents.getTitle(), Title);
     }
     @Test
     public void testGetNovelGenreMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
-        assertEquals("The genre is not Adventure", "Adventure", testNovel.getGenre());
+        assertEquals("The genre is not Adventure", "Adventure", LibraryContents.getGenre());
     }
     @Test
     public void testSetNovelGenreMethod(){
         String Genre = "Adventure";
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
         testNovel.setGenre("Adventure");
-        assertEquals(testNovel.getGenre(), Genre);
+        assertEquals("this isn't the right genre", LibraryContents.getGenre(), Genre);
     }
     @Test
     public void testGetNovelAuthorMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
-        assertEquals("The Author is not John Steinbeck", "John Steinbeck", testNovel.getAuthor());
+        assertEquals("The Author is not John Steinbeck", "John Steinbeck", Book.getAuthor());
     }
     @Test
     public void testSetNovelAuthorMethod(){
         String Author = "John Steinbeck";
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
-        testNovel.setTitle("OJohn Steinbeck");
-        assertEquals(testNovel.getAuthor(), Author);
+        testNovel.setTitle("John Steinbeck");
+        assertEquals("this isn't the right author", Book.getAuthor(), Author);
     }
     @Test
     public void testGetNovelLengthMethod(){
         Novel testNovel = new Novel("Of mice and Men", "Adventure", "John Steinbeck", 200);
-        assertEquals("The Length is not 200", 200, testNovel.getBookLength());
+        assertEquals("The Length is not 200", 200, Book.getBookLength());
     }
     @Test
     public void testSetNovelLengthMethod(){
         int Length = 200;
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
-        testNovel.setBookLength(200);
-        assertEquals(testNovel.getBookLength(), Length);
+        Book.setBookLength(200);
+        assertEquals("this isn't the right length", Book.getBookLength(), Length);
     }
 }

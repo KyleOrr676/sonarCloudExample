@@ -1,5 +1,6 @@
 import kyle.Book;
 import kyle.Comic;
+import kyle.LibraryContents;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -8,49 +9,49 @@ public class comicTest {
     @Test
     public void testGetComicTitleMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
-        assertEquals("The Comic is not Batman", "Batman", testComic.getTitle());
+        assertEquals("The Comic is not Batman", "Batman", LibraryContents.getTitle());
     }
     @Test
     public void testSetComicTitleMethod(){
         String Title = "Batman";
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
         testComic.setTitle("Batman");
-        assertEquals(testComic.getTitle(), Title);
+        assertEquals("this isn't the right title", LibraryContents.getTitle(), Title);
     }
     @Test
     public void testGetComicGenreMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
-        assertEquals("The Genre is not Superhero", "Superhero", testComic.getGenre());
+        assertEquals("The Genre is not Superhero", "Superhero", LibraryContents.getGenre());
     }
     @Test
     public void testSetComicGenreMethod(){
         String Genre = "Superhero";
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
         testComic.setGenre("Superhero");
-        assertEquals(testComic.getGenre(), Genre);
+        assertEquals("this isn't the right genre", LibraryContents.getGenre(), Genre);
     }
     @Test
     public void testGetComicAuthorMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
-        assertEquals("The Author is not DC Comics", "DC Comics", testComic.getAuthor());
+        assertEquals("The Author is not DC Comics", "DC Comics", Book.getAuthor());
     }
     @Test
     public void testSetComicAuthorMethod(){
         String Author = "DC Comics";
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
         Book.setAuthor("DC Comics");
-        assertEquals(testComic.getAuthor(), Author);
+        assertEquals("this isn't the right author", Book.getAuthor(), Author);
     }
     @Test
     public void testComicLengthMethod(){
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics",50);
-        assertEquals("The Length is not 50", 50, testComic.getBookLength());
+        assertEquals("The Length is not 50", 50, Book.getBookLength());
     }
     @Test
     public void testSetComicLengthMethod(){
         int Length = 50;
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
-        testComic.setBookLength(50);
-        assertEquals(testComic.getBookLength(), Length);
+        Book.setBookLength(50);
+        assertEquals("this isn't the right length", Book.getBookLength(), Length);
     }
 }

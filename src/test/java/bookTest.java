@@ -14,7 +14,7 @@ public class bookTest {
         String Title = "Harry Potter";
         Book testBook = new Book ("Harry Potter", "Fantasy", "JK Rowling", 234);
         testBook.setTitle("Harry Potter");
-        assertEquals(testBook.getTitle(), Title);
+        assertEquals("this isn't the right title", testBook.getTitle(), Title);
     }
     @Test
     public void testGetBookGenreMethod(){
@@ -26,7 +26,7 @@ public class bookTest {
         String Genre = "Fantasy";
         Book testBook = new Book ("Harry Potter", "Fantasy", "JK Rowling", 234);
         testBook.setGenre("Fantasy");
-        assertEquals(testBook.getGenre(), Genre);
+        assertEquals("this isn't the right genre", testBook.getGenre(), Genre);
     }
     @Test
     public void testGetBookAuthorMethod(){
@@ -38,7 +38,7 @@ public class bookTest {
         String Author = "JK Rowling";
         Book testBook = new Book ("Harry Potter", "Fantasy", "JK Rowling", 234);
         Book.setAuthor("JK Rowling");
-        assertEquals(testBook.getAuthor(), Author);
+        assertEquals("this isn't the right author", testBook.getAuthor(), Author);
     }
     @Test
     public void testGetBookLengthMethod(){
@@ -50,6 +50,6 @@ public class bookTest {
         int Length = 234;
         Book testBook = new Book ("Harry Potter", "Fantasy", "JK Rowling", 234);
         testBook.setBookLength(234);
-        assertEquals(Book.getBookLength(), Length);
+        assertEquals("this isn't the right length", testBook.getBookLength(), Length);
     }
 }
