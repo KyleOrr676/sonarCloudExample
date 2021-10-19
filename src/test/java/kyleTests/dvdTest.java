@@ -1,3 +1,5 @@
+package kyleTests;
+
 import kyle.DVD;
 import org.junit.Test;
 
@@ -52,5 +54,4 @@ public class dvdTest {
         testDVD.setLength(96);
         assertEquals(testDVD.getDVDLength(), Length);
     }
-
 }

@@ -1,5 +1,6 @@
+package kyleTests;
+
 import kyle.Audiobook;
-import kyle.LibraryContents;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -40,5 +41,18 @@ public class audiobookTest {
         Audiobook testAudiobook = new Audiobook ("LOTR", "Fantasy", 1500);
         Audiobook.setLength(1500);
         assertEquals("this isn't the right length", testAudiobook.getABLength(), Length);
+    }
+
+    @Test
+    public void testGetbookTitleMethod(){
+        Audiobook testbook2 = new Audiobook ("LOTR", "Fantasy", 1500);
+        assertEquals("The audiobook is not LOTR", "LOTR", testbook2.getTitle());
+    }
+    @Test
+    public void testSetbookTitleMethod(){
+        String Title = "LOTR";
+        Audiobook testbook2 = new Audiobook ("LOTR", "Fantasy", 1500);
+        testbook2.setTitle("LOTR");
+        assertEquals("this isn't the right title", testbook2.getTitle(), Title);
     }
 }

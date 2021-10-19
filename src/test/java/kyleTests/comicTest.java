@@ -1,6 +1,7 @@
+package kyleTests;
+
 import kyle.Book;
 import kyle.Comic;
-import kyle.LibraryContents;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

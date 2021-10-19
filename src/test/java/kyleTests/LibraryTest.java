@@ -1,11 +1,13 @@
+package kyleTests;
 
-import kyle.*;
+import io.cucumber.core.gherkin.Feature;
+import kyle.LibraryContents;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class LibraryTests {
+public class LibraryTest {
 
 
     @Test
@@ -33,14 +35,4 @@ public class LibraryTests {
         testLibraryContents.setGenre("Fantasy");
         assertEquals("this isn't the right genre", testLibraryContents.getGenre(), Genre);
     }
-
-
-
-
-
-
-
-
-
-
 }

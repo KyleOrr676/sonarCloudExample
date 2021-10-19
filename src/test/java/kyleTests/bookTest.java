@@ -1,3 +1,5 @@
+package kyleTests;
+
 import kyle.Book;
 import org.junit.Test;
 
