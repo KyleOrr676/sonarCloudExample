@@ -27,7 +27,7 @@ public class LibraryTests {
         assertEquals("The Film is not Fantasy", "Fantasy", testLibraryContents.getGenre());
     }
     @Test
-    public void testSetAudiobookGenreMethod(){
+    public void testSetLibraryContentsGenreMethod(){
         String Genre = "Fantasy";
         LibraryContents testLibraryContents = new LibraryContents("LOTR", "Fantasy") {};
         testLibraryContents.setGenre("Fantasy");

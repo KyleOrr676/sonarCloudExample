@@ -16,7 +16,7 @@ public class novelTest {
         String Title = "Of mice and Men";
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
         testNovel.setTitle("Of mice and Men");
-        assertEquals("this isn't the right title", LibraryContents.getTitle(), Title);
+        assertEquals("this isn't the right title", testNovel.getTitle(), Title);
     }
     @Test
     public void testGetNovelGenreMethod(){
@@ -28,7 +28,7 @@ public class novelTest {
         String Genre = "Adventure";
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
         testNovel.setGenre("Adventure");
-        assertEquals("this isn't the right genre", LibraryContents.getGenre(), Genre);
+        assertEquals("this isn't the right genre", testNovel.getGenre(), Genre);
     }
     @Test
     public void testGetNovelAuthorMethod(){
@@ -40,7 +40,7 @@ public class novelTest {
         String Author = "John Steinbeck";
         Novel testNovel = new Novel ("Of mice and men", "Adventure", "John Steinbeck", 200);
         testNovel.setTitle("John Steinbeck");
-        assertEquals("this isn't the right author", Book.getAuthor(), Author);
+        assertEquals("this isn't the right author", testNovel.getAuthor(), Author);
     }
     @Test
     public void testGetNovelLengthMethod(){

@@ -16,7 +16,7 @@ public class comicTest {
         String Title = "Batman";
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
         testComic.setTitle("Batman");
-        assertEquals("this isn't the right title", LibraryContents.getTitle(), Title);
+        assertEquals("this isn't the right title", testComic.getTitle(), Title);
     }
     @Test
     public void testGetComicGenreMethod(){
@@ -28,7 +28,7 @@ public class comicTest {
         String Genre = "Superhero";
         Comic testComic = new Comic ("Batman", "Superhero", "DC Comics", 50);
         testComic.setGenre("Superhero");
-        assertEquals("this isn't the right genre", LibraryContents.getGenre(), Genre);
+        assertEquals("this isn't the right genre", testComic.getGenre(), Genre);
     }
     @Test
     public void testGetComicAuthorMethod(){
